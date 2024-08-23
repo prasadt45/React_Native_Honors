@@ -5,17 +5,18 @@ buildscript {
         compileSdkVersion = 34
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
-        kotlinVersion = "1.9.24"
+        kotlinVersion = "1.9.24" // Ensure this is the version you need
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
-        classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("com.android.tools.build:gradle:8.1.0") // Android Build Tools Plugin
+        classpath("com.facebook.react:react-native-gradle-plugin:0.72.0") // React Native Plugin
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24") // Kotlin Plugin, updated version
     }
 }
 
+// Apply the necessary plugin to your project
 apply plugin: "com.facebook.react.rootproject"
